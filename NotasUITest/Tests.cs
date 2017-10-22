@@ -47,8 +47,9 @@ namespace NotasUITest
             app.DismissKeyboard();
             app.Tap("bt_logar");
             app.WaitFor(() => 
-                app.Query(e => e.Marked("tx_result"))
-                .First().Enabled,"Wait for page");
+                app.Query(e => e.Id("tx_result"))
+                .First().Enabled,"Wait for page",
+                TimeSpan.FromSeconds(20));
         }
     }
 }
