@@ -2,17 +2,16 @@
 using Android.Widget;
 using Android.OS;
 
-namespace Leitor_Notas
+namespace Leitor_De_Notas
 {
-    [Activity(Label = "Leitor_Notas", MainLauncher = true)]
+    [Activity(Label = "Leitor_De_Notas", MainLauncher = true)]
     public class MainActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
-            // Set our view from the "main" layout resource
-            SetContentView(Resource.Layout.Main);
+            Acr.UserDialogs.UserDialogs.Init(this);
+            StartActivity(typeof(Leitor_De_Notas.Login.LoginActivity));
         }
     }
 }

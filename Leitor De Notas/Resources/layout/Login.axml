@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:id="@+id/body"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="Login"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="45sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="27.5dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1"
+            android:layout_margin="10dp">
+            <EditText
+                android:id="@+id/et_login"
+                android:hint="Login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textAutoComplete"
+                android:maxLength="36" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout3"
+            android:layout_margin="10dp">
+            <EditText
+                android:id="@+id/et_pass"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:imeOptions="actionDone" />
+        </LinearLayout>
+        <TextView xmlns:tools="http://schemas.android.com/tools"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lb_msg_error"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@android:color/holo_red_light"
+            tools:visibility="gone" />
+        <Button
+            android:text="Entrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_logar"
+            android:layout_margin="15dp" />
+        <CheckBox
+            android:text="Lembrar login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ch_relember"
+            android:layout_margin="15dp" />
+    </LinearLayout>
+</LinearLayout>
